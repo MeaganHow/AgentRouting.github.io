@@ -18,7 +18,7 @@
         <button class="p-2 hover:bg-gray-100 rounded-full">
             <i class="fa-solid fa-bars text-gray-600 text-lg"></i>
         </button>
-        <button class="bg-blue-600 text-white px-6 py-2 rounded font-medium hover:shadow-md transition">Sign in (1)</button>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded font-medium hover:shadow-md transition">Sign in (2)</button>
     </header>
 
     <main class="flex-grow flex flex-col items-center mt-28">
@@ -28,4 +28,24 @@
             </h1>
         </div>
         <script type='text/javascript'>
+			<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DQJ000009DsDV',
+				'Github_messaging_setting',
+				'https://spoonconsulting--uat.sandbox.my.site.com/ESWGithubmessagingsetti1768480439591',
+				{
+					scrt2URL: 'https://spoonconsulting--uat.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://spoonconsulting--uat.sandbox.my.site.com/ESWGithubmessagingsetti1768480439591/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 	
