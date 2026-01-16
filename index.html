@@ -34,7 +34,10 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
+		window.addEventListener("onEmbeddedMessagingReady",() =>{
+			console.log("MHO Received");
+			embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({"customerEmail":"test"});
+		});
 			embeddedservice_bootstrap.init(
 				'00DQJ000009DsDV',
 				'Github_messaging_setting',
